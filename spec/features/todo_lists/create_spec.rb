@@ -10,7 +10,7 @@ describe "Creating todo lists" do
         fill_in "Description", with: "This is what i am doing today."
         click_button "Create Todo list"
 
-        expect(page).to have_content("My todo_list")
+        expect(page).to have_content("My todo list")
     end
     it "displays an error when the todo list has no title" do
     	expect(TodoList.count).to eq(0)
