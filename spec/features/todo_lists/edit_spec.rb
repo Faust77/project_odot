@@ -21,7 +21,7 @@ end
    it "updates a todo list successfully with correct information" do
   	 update_todo_list todo_list: todo_list,
   	                  title: "New Title",
-  	                  description: "New description"
+  	                  description: "New Description"
    todo_list.reload
   
    expect(page).to have_content("Todo list was successfully updated")
